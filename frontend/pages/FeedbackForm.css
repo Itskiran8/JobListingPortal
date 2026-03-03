@@ -1,0 +1,91 @@
+body {
+  background: linear-gradient(135deg, #010700, #0f1f0f);
+  min-height: 100vh;
+  font-family: 'Arial', sans-serif;
+}
+
+.feedback-form-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #fff; /* keep clean like auth pages */
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+.feedback-form-container h2 {
+  text-align: center;
+  color: #d18f14;
+  margin-bottom: 25px;
+}
+
+/* Match auth-box input/select style */
+.feedback-form input,
+.feedback-form textarea {
+  width: 100%;
+  padding: 14px 18px;      /* same as auth-box */
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s ease;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+
+.feedback-form input:focus,
+.feedback-form textarea:focus {
+  border-color: #d18f14;
+}
+
+.feedback-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Star rating */
+.rating-input {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.rating-input span {
+  margin-right: 10px;
+  font-weight: bold;
+  color: #d18f14;
+}
+
+/* Submit button */
+.feedback-form button {
+  width: 100%;
+  padding: 14px;
+  background-color: #d18f14;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.feedback-form button:hover {
+  background-color: #b3700f;
+}
+
+/* Feedback message */
+.submit-status {
+  text-align: center;
+  margin-top: 15px;
+  font-weight: bold;
+  color: green;
+}
+
+/* Optional: add a small margin for mobile spacing */
+@media (max-width: 600px) {
+  .feedback-form-container {
+    margin: 30px 15px;
+    padding: 20px;
+  }
+}

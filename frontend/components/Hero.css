@@ -1,0 +1,109 @@
+.hero {
+  height: 100vh;
+  background: url("img/slider_bg.jpg") no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+/* Dark overlay */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  width: 80%;
+}
+
+.hero-content h1 {
+  font-size: 45px;
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+/* Search Bar Layout */
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.search-bar input {
+  padding: 12px;
+  width: 250px;
+  border-radius: 5px;
+  border: none;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+  padding: 12px 20px;
+  background: white;
+  color: black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  width: 200px;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.dropdown-content p {
+  padding: 10px;
+  margin: 0;
+  cursor: pointer;
+}
+
+.dropdown-content p:hover {
+  background: #f0f0f0;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Button */
+.search-bar button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  background: #d18f14;
+  color: #010700;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background: #368a06;
+  color: white;
+}
+
+/* Trending text */
+.trending {
+  margin-top: 25px;
+  font-size: 14px;
+  color: #ddd;
+}

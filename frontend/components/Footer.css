@@ -1,0 +1,72 @@
+.footer {
+  background-color: #d18f14;
+  color: white;
+  padding: 60px 8%;
+}
+
+.footer-container {
+  display: flex;            /* Grid hata ke flex use kar rahe */
+  justify-content: space-between;
+  flex-wrap: wrap;          /* Responsive ke liye */
+  gap: 30px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 220px;
+}
+
+.footer-logo {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.footer-section h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.footer-section p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.footer-section ul li:hover {
+  transform: translateX(5px);
+   color: #010700;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  font-size: 20px;
+  cursor: pointer;
+ 
+}
+
+.social-icons svg:hover {
+  transform: scale(1.2);
+  transition: 0.3s;
+   color: #010700;
+  
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 15px;
+  border-top: 1px solid rgba(255,255,255,0.3);
+}

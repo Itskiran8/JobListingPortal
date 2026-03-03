@@ -1,0 +1,30 @@
+/* Ensure proper width calculation */
+.auth-box input,
+.auth-box select {
+  width: 100%;
+  padding: 14px 18px;   /* more right-left padding */
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s ease;
+  box-sizing: border-box;   /* 🔥 important fix */
+}
+
+/* Extra spacing for dropdown arrow */
+.auth-box select {
+  padding-right: 40px;   /* arrow ke liye space */
+  appearance: none;      /* remove default styling */
+  background-color: #fff;
+}
+
+/* Optional: custom dropdown arrow */
+.auth-box .input-group {
+  position: relative;
+}
+
+.auth-box .input-group select {
+  background-image: url("data:image/svg+xml;utf8,<svg fill='%23d18f14' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+}

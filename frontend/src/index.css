@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+
+
+/* Icon Links */
+.icon-link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background-color: #f3f4f6;
+}
+
+.hero input {
+  padding: 10px;
+  width: 250px;
+}
+
+.hero button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  background-color: #1e3a8a;
+  color: white;
+  border: none;
+}
+
+.job-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 20px;
+}
