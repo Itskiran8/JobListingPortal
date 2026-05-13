@@ -50,3 +50,14 @@
   align-items: center;
   gap: 5px;
 }
+
+.icon-link{
+background:none;
+border:none;
+color:inherit;
+cursor:pointer;
+display:flex;
+align-items:center;
+gap:5px;
+font-size:14px;
+}

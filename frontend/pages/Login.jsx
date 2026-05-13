@@ -19,8 +19,11 @@ function Login() {
       });
 
       localStorage.setItem("token", res.data.token);
+      localStorage.setItem("userId", res.data._id);
+localStorage.setItem("role", res.data.role);
       alert("Login Successful");
-      navigate("/home");
+      navigate("/dashboard");
+      // navigate("/home");
 
     } catch (error) {
       alert(error.response?.data?.message || "Login Failed");
@@ -49,6 +52,15 @@ function Login() {
               placeholder="Enter Password"
               required
               onChange={(e) => setPassword(e.target.value)}
+            />
+          </div>
+
+ <div className="input-group">
+            <input
+              type="text"
+              placeholder="Enter Role"
+              required
+              onChange={(e) => setRole(e.target.value)}
             />
           </div>
 
